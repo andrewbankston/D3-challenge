@@ -92,6 +92,7 @@ d3.csv("./assets/data/data.csv").then(function(censusData) {
       });
 
 
+
     chartGroup.append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left + 40)
