@@ -38,7 +38,7 @@ d3.csv("./assets/data/data.csv").then(function(censusData) {
       .range([0, width]);
 
     var yLinearScale = d3.scaleLinear()
-      .domain([0, d3.max(censusData, d => d.healthcare) *1.1])
+      .domain([d3.min(censusData, d => d.healthcare) * 0.8, d3.max(censusData, d => d.healthcare) *1.1])
       .range([height, 0]);
 
     
